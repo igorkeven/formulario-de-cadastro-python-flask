@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(173, 156, 156);
+    color: black;
+    background: url(/static/imagens/imagem-ptogramador-fundo.jpg) no-repeat ;
+    background-position: center;
+    background-size: cover;
+ 
+}
+
+div#container-login{
+    background-position: center;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 90%;
+    
+}
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+label{
+    font-size: 20px;
+    color: rgb(2, 35, 63);
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+
+input {
+    
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px black;
+    border: 2px black ;
+    
+}
+
+
+input:focus {
+    color: black;
+    background-color: rgb(233, 126, 126);
+
+}
+
+
+button#btn-entrar{
+    border-radius: 0%;
+    color: #fff;
+    background-color: #08558b;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button#btn-entrar:hover{
+    transition: .5s;
+    opacity: 50%;
+    background-color:red;
+    color: blue;
+}
+
+
+h1{
+    color: rgb(255, 230, 2);
+    background-position: center;
+}
+
+
+div#alerta{
+    background: yellow;
+    color: rgb(194, 0, 0);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}

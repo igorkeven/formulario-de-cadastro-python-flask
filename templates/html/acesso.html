@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}">
+
+</head>
+<body>
+    <h1>
+        OLÁ MUNDO! <br><br>
+        
+        PARABENS VOCE ESTA LOGADO <br><br>
+        {{nomeUsuario}}
+        {{nomecadastro}}
+
+    </h1>
+    <div id="container-login">
+        <h1>CADASTRO PYTHON</h1>
+        {% set mensagens = get_flashed_messages() %}
+        {% if mensagens %}
+            <div id="alerta">
+                {{mensagens[0]}}
+            </div>
+        {% endif %}
+        <form action="cadastrar" method="post">
+            
+            <section id="login">
+                
+                <label for="nome">nome</label>
+                <input type="text" name="nomecad" id="nome" placeholder="Digite seu nome de usuario" required>
+                <label for="senha">senha</label>
+                <input type="password" name="senhacad" id="senha" placeholder="Digite sua senha" required>
+                <button type="submit" id="btn-entrar" value="entrar">ENTRAR</button>
+            </section>
+        </form>
+    </div>
+
+
+</body>
+</html>
